@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createWebHistory , createRouter } from 'vue-router'
 
 import ProductList from './views/ProductList.vue'
 import SingleProduct from './views/SingleProduct.vue'
@@ -17,7 +17,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(), 
+  history: createWebHistory(), 
   routes,
 })
 
